@@ -220,16 +220,16 @@ challenge:                                # Incoming challenges.
 #  min_initial: 60                          # Minimum amount of initial time to accept a challenge.
 # max_initial: 315360000                  # Maximum amount of initial time to accept a challenge.
   variants:                               # Chess variants to accept (https://lichess.org/variant).
-    - standard
-    - chess960
-    - fromPosition
+#    - standard
+#    - chess960
+#    - fromPosition
     - antichess
-    - atomic
-    - crazyhouse
-    - horde
-    - kingOfTheHill
-    - racingKings
-    - threeCheck
+#    - atomic
+#    - crazyhouse
+#    - horde
+#    - kingOfTheHill
+#    - racingKings
+#    - threeCheck
   bot_time_controls:                      # Speeds or time controls in initial_minutes+increment_seconds format to accept against BOTs.
     - bullet
     - blitz
@@ -248,16 +248,18 @@ challenge:                                # Incoming challenges.
 #    - casual                              # Unrated games.
 #    - rated                               # Rated games
 matchmaking:
-  delay: 400                               # Time in seconds the bot must be idle before a new challenge is started.
+  delay: 300                               # Time in seconds the bot must be idle before a new challenge is started.
   timeout: 30                             # Time until a challenge is canceled.
   selection: weighted_random              # Matchmkaing type selection is one of "weighted_random", "sequential" or "cyclic".
   types:
     bullet2p1:
       tc: 2+1
       weight: 100
+      variant: antichess
     blitz5p3:
       tc: 5+3
       weight: 100
+      variant: antichess
 #    blitz:
 #      tc: 3+1
 #      weight: 100
