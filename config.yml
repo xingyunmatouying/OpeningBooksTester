@@ -148,6 +148,7 @@ opening_books:
       allow_repetitions: true
       names:
         - antichess
+        - anti
 #   Use the same pattern for 'bullet', 'blitz', 'rapid', 'classical', time controls in initial_minutes+increment_seconds format,
 #   'antichess', 'atomic', 'chess960', 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
 #   Append '_white', '_black', '_human' and/or '_tournament' to use the book only as the specific color, against humans or in tournaments.
@@ -347,7 +348,7 @@ whitelist:                                # List of users whose challenges are a
 - bot1e
 - TestingBot1
 - SF_Bot1nok
-- Lucky_0wl
+- KlepitsaM
 - Bot1nokk
 
 blacklist:                                # List of users who are not challenged and whose challenges are declined.
@@ -368,3 +369,4 @@ books:                                    # Names of the opening books (to be us
   YetAnotherBook: "./engines/yetanotherbook.bin"
   Tourneys: "./engines/tournm.bin"
   antichess: "./engines/antichess.bin"
+  anti: "./engines/anti.bin"
