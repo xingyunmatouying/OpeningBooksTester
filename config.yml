@@ -149,6 +149,7 @@ opening_books:
       names:
         - antichess
         - anti
+        - whybooksarenotworking
 #   Use the same pattern for 'bullet', 'blitz', 'rapid', 'classical', time controls in initial_minutes+increment_seconds format,
 #   'antichess', 'atomic', 'chess960', 'crazyhouse', 'horde', 'kingofthehill', 'racingkings' and '3check' as well.
 #   Append '_white', '_black', '_human' and/or '_tournament' to use the book only as the specific color, against humans or in tournaments.
@@ -370,3 +371,4 @@ books:                                    # Names of the opening books (to be us
   Tourneys: "./engines/tournm.bin"
   antichess: "./engines/antichess.bin"
   anti: "./engines/anti.bin"
+  whybooksarenotworking: "./engines/whythisnotwork.bin"
